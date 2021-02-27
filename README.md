@@ -1,10 +1,11 @@
 # moviebookingproject
 
-booking-service:
-
-
-
-     port=8081
+##1booking-service:
+   
+	 
+	 
+	 
+	 port=8081
      end points /booking/
                         /all->get Request -> bookingdetails
                        /  ->post requst-> save new booking details
@@ -22,8 +23,11 @@ booking-service:
                        edit/{id}->put request ->@request body edit details
 				   
                        
- movie-service:
-    port=8082
+ ##2 movie-service:
+   
+	 
+	
+	port=8082
       end points /movie/
                     /->post request ->@Requestbody -> movie model
                    
@@ -36,27 +40,26 @@ booking-service:
                    /name/{name}->get request->fetch movie by name
                    
                    /edit/{id}-> put requst ->edit movie details by id
-                   
-                   
-
-moviehall-service
-   port:8083
+		   
+##3 moviehall-service
+   
+	 port:8083
         end points       /moviehall/
                          /all->get request -> find all movie
                          /movie/{movie} ->get request -> fetch moviehall by movie name
  
  
-
- 
-  service-registry
-     port:8084
+ ##4 service-registry
+     
+		 port:8084
            registry  ing service 
                             MOVIE-SERVICE
                             BOOKING-SERVICE
                             MOVIEHALL-SERVICE
                             API-GATEWAY                         
-  api-gateway
-    port:8085
+  ##5 api-gateway
+    	
+	 port:8085
            mapping routes requests 
                             MOVIE-SERVICE  ---->/movie-api/**
                             BOOKING-SERVICE---->/booking-api/**
