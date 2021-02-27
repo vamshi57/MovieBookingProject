@@ -68,23 +68,23 @@
       
  
 
-  # Add booking feature 
+  ## Add booking feature 
   
     url:     http://host.docker.internal:8085/booking-api/booking/
 	    Post request ->  requestbody 
 	    
 	    
- # get the list of movie which available starting and ending date
+ ## get the list of movie which available starting and ending date
             url:     http://host.docker.internal:8085/movie-api/movie/movie-in-dates
 	    Post request ->  requestbody  datesmodel
 
-# movie booking
+## movie booking
                url:     http://host.docker.internal:8085/booking-api/booking/
 	    Post request ->  requestbody  ->booking model class 
 	    
 	    return user to booking id 
 	    
-# search booking by id,person name,contact number,email	    
+## search booking by id,person name,contact number,email	    
 	    
              url:  http://host.docker.internal:8085/booking-api/booking/
 	     
@@ -97,12 +97,12 @@
                        email/{email}-> get request ->fetch by email
 		  
 		  
-# cancel booking
+## cancel booking
               url:  http://host.docker.internal:8085/booking-api/booking/cancel/{id}
 	        
 		->delete Request-> delete booking
 		
-# edit booking 
+## edit booking 
         url: http://host.docker.internal:8085/booking-api/booking/edit/{id}    
         put request ->@request body edit details
         
